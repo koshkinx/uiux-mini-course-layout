@@ -12,6 +12,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+a:focus,
+button:focus {
+  outline: 3px solid #504DEE;
+  outline-offset: 3px;
+}
 
 
 
