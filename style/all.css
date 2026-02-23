@@ -5,6 +5,13 @@ body {
     font: 400 18px/28px Inter, sans-serif;
 
 }
+html, body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -34,6 +41,24 @@ main {
     display: flex;
     align-items: center;
     gap: 68px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 2px;
+  background: #19191C;
+  transition: 0.3s;
 }
 
 .nav__list {
@@ -494,3 +519,165 @@ align-items: flex-end;   /* ВАЖНО */
     background: #FFFFFF;
     color: #504DEE;
 }
+
+
+@media (max-width: 768px) {
+
+  
+
+  .btn-box {
+    gap: 16px;
+  }
+
+  .header_obs {
+    padding: 20px 0;
+  }
+
+}
+@media (max-width: 992px) {
+
+  .profession__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .proffesion__holder {
+    width: 100%;
+  }
+
+  .profession__image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  
+  .profession__list {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .profession__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .profession-info__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .pricing__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+}
+@media (max-width: 992px) {
+
+  .profession-info__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profession-info__stats {
+    gap: 40px;
+  }
+
+}
+@media (max-width: 992px) {
+
+  .profession-info__cards {
+    flex-direction: column;
+  }
+
+  .pricing__cards {
+    flex-direction: column;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .footer__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+
+  .proffesion__holder {
+    width: 100%;
+  }
+
+  .profession-info__about {
+    max-width: 100%;
+  }
+
+  .stat__description {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .profession-info__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profession-info__stats {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header_obs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header__box {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-box {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .header__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
